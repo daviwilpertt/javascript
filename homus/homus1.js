@@ -21,7 +21,9 @@ function pizza() {
     
     let tamanho = document.getElementsByName("tamanho");
     switch(tamanho){
-        case
+        case "borda_salgada": preco_pizza += 10;
+        break;
+        
     }
     let borda_salgada = document.getElementById("borda_salgada");
     let borda_doce = document.getElementById("borda_doce");

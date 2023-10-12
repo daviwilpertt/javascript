@@ -2,7 +2,7 @@ let sabor1, preco_total;
 let saida1 = document.getElementById("saida1");
 let saida2 = document.getElementById("saida2");
 let preco_pizza;
-function pizza() {
+function pizza(){
     sabor1 = document.getElementById("porta");
     preco_pizza = sabor1.value;
     switch (preco_pizza) {
