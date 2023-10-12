@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>la cantineta</title>
+    <style>
+        body {
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            background-color: grey;
+
+        }
+
+        .inputs {
+            width: 50px;
+        }
+
+        div {
+            background-color: white;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 10px;
+            box-shadow: 8px 4px 8px;
+        }
+
+        #atv2>h1 {
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="atv2">
+        <h1>La Cantineta</h1>
+        <table border="1">
+            <tr>
+                <th>item</th>
+                <th>qtd</th>
+                <th>preço un</th>
+                <th>total</th>
+            </tr>
+            <tr>
+                <td><select id="produto">
+                        <option value="4.00">cachorro-quente</option>
+                        <option value="4.50">x-salada</option>
+                        <option value="5.00">x-bacon</option>
+                        <option value="2.00">torrada simples</option>
+                        <option value="1.50">refrigerante</option>
+                    </select></td>
+                <td><input class="inputs" type="number" id="quantidade"></td>
+                <td><label id="saida_preco"></label></td>
+                <td><label id="saida_total"></label></td>
+            </tr>
+        </table> <br>
+        <button onclick="cantina()">calcular</button> <br> <br>
+        <a href="prova1.html">atividade 1</a>
+    </div>
+    <script src="prova2.js"></script>
+</body>
+
+</html>

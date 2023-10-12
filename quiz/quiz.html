@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mini quiz</title>
+    <style>
+        body {
+            display: table;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            background-color: gray;
+        }
+
+        .inputs {
+            width: 50px;
+        }
+        div{
+            border: solid black;
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>mini quiz</h1>
+        <p>
+            pergunta 1, qual a capital do Acre?
+            <select id="pergunta1">
+                <option value="0">Bela Vista</option>
+                <option value="1">Rio Branco</option>
+                <option value="0">Cidade Velha</option>
+            </select>
+        </p>
+        <p>
+            pergunta 2, qual a cor do cavalo Branco de Napoleão?
+            <select id="pergunta2">
+                <option value="0">branco</option>
+                <option value="0">preto</option>
+                <option value="1">marrom</option>
+            </select>
+        </p>
+        <p>
+            pergunta 3, em quantas capitanias hereditárias o "Brasil" foi divido?
+            <select id="pergunta3">
+                <option value="1">14</option>
+                <option value="0">16</option>
+                <option value="0">12</option>
+            </select>
+        </p>
+        <hr>
+        <p>
+            qual forma você quer receber o resultado? <br>
+            <input checked type="radio" name="radio" id="alert"> alert
+            <input type="radio" name="radio" id="input"> input
+            <input type="radio" name="radio" id="label"> label
+        </p>
+        <hr>
+        <p>
+            <button onclick="resultado()">resultado</button>
+            <input type="text" id="saida_input">
+            <label id="saida_label">saida</label>
+        </p>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+
+</html>
