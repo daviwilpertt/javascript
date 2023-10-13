@@ -1,0 +1,11 @@
+colocar o value ="1" no imput deixa o valor padrão na pagina
+Number.parseInt(string, base) // converte a string em numero, base é 10(decimal)
+matriz ou array sao dados dentro de [ ] 
+const idade = [16, 34, 59] // para saber quantos dados tem no array é so usar o .length
+idade.length = 2 // 2 pq começa do 0
+array.length - 1 // pegar o ultimo dado da função
+para puxar um dado dentro do array é usado variavel[0] // 0 = posição do dado no array
+array.push(0) //adicionar um dado dentro do array 
+arrays.forEach(function(array){ // item da matriz
+    console.log(array) // pega os dados do array e imprime no console
+}) 
