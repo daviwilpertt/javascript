@@ -1,6 +1,4 @@
-*{ 
-    /*asterico pega tudo dentro do html(header, body, tudo)*/
-}
+ /*asterico pega tudo dentro do html(header, body, tudo)*/
 html, body{  /*quando tem dois elementos separados por "," o estilo se aplica ao dois */
     height: 100%;
     width: 100%;

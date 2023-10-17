@@ -1,8 +1,28 @@
+html, body{
+    height: 100%;
+    width: 100%;
+}
+header{
+    height: 10%;
+    background-color: black;
+    color: aliceblue;
+    font-size: 50px;
+}
 main{
     display: flex;
-    flex-direction: row;
+    background-color: brown;
     height: 90%;
+    flex-direction: ;
+    justify-content: center;
+    align-items: center;
 }
 div{
-
+    background-color: gray;
+    height: 90%;
+    width: 90%;
+    flex-direction:;
+    
+}
+section{
+    height: 30%;
 }
