@@ -1,0 +1,28 @@
+*{ 
+    /*asterico pega tudo dentro do html(header, body, tudo)*/
+}
+html, body{  /*quando tem dois elementos separados por "," o estilo se aplica ao dois */
+    height: 100%;
+    width: 100%;
+}
+header{
+    background-color: blue; 
+    height: 10%;
+}
+main{
+    display: flex;
+    flex-direction:row;
+    background-color: brown;
+    height: 90%;
+    justify-content: center;
+    align-items: center;
+}
+#direita{
+    background-color: rgb(248, 0, 215);
+    
+}
+
+#esquerda{
+    background-color: rgb(255, 145, 0);
+    
+}
