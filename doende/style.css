@@ -19,10 +19,23 @@ main{
 }
 #direita{
     background-color: rgb(248, 0, 215);
-    
-}
 
+}
 #esquerda{
     background-color: rgb(255, 145, 0);
     
+}
+.horizonte{
+    height: 100%;
+    width: 50%;
+}
+.divs{
+    flex-direction: column;
+    height: 50%;
+}
+#primeira_div{
+    background-color: aqua;
+}
+#segunda_div{
+    background-color: darkslategrey;
 }
