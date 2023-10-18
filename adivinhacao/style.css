@@ -1,0 +1,19 @@
+html, body{
+    width: 100%;
+    height: 100%;
+}
+header{
+    height: 10%;
+    background-color: black;
+    color: white;
+}
+main{
+    height: 90%;
+    color: white;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: space-evenly;
+}
+#numero_digitado{
+    width: 30px;
+}
