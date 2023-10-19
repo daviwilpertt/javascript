@@ -8,16 +8,16 @@ let mt_dificil = document.getElementById("mt_dificil");
 let numero_aleatorio = Math.random().toFixed(1) * 10;
 let tentativas = Number(1);
 let max_tentativas = Number();
+let resetar = document.getElementById("botao_resetar")
 let res = document.getElementById("botao_res");
 let dif = document.getElementById("botao_dif");
-console.log(numero_aleatorio)
+// console.log(numero_aleatorio)
 function dificuldade() {
     res.disabled = false
     dif.disabled = true
     if (facil.checked) {
         max_tentativas = 15;
-        saida_dificuldade.innerHTML = max_tentativas
-        
+        saida_dificuldade.innerHTML = max_tentativas   
     }
     else if (media.checked) {
         max_tentativas = 10;
@@ -31,8 +31,7 @@ function dificuldade() {
         max_tentativas = 2;
         saida_dificuldade.innerHTML = max_tentativas
     }
-    
-    
+     
 }
 function resultado() {
     let entrada = document.getElementById("numero_digitado").value
@@ -44,6 +43,7 @@ function resultado() {
         else if (max_tentativas == 0) {
             saida_tentativas.innerHTML = "acabaram as tentativas"
             res.disabled = true
+            resetar.disabled = false
         }
         else {
         }
@@ -51,6 +51,7 @@ function resultado() {
             saida_resultado.innerHTML = `acertou em ${tentativas} tentativas`
             saida_tentativas.innerHTML = "jogo encerrado"
             res.disabled = true
+            resetar.disabled = false
 
         }
         else if (entrada > numero_aleatorio) {
@@ -65,4 +66,13 @@ function resultado() {
     else {
         saida_resultado.innerHTML = "1 a 10"
     }
+}
+function reset() {
+    entrada = document.getElementById("numero_digitado")
+    numero_aleatorio = Math.random().toFixed(1) * 10
+    // console.log(numero_aleatorio)
+    resetar.disabled = true
+    dif.disabled = false
+    saida_tentativas.innerHTML = "&nbsp"
+    entrada.value = "1"
 }
