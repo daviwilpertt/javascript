@@ -75,4 +75,7 @@ function reset() {
     dif.disabled = false
     saida_tentativas.innerHTML = "&nbsp"
     entrada.value = "1"
+    saida_resultado.innerHTML = "&nbsp"
+    tentativas = 0
+    tentativas++
 }

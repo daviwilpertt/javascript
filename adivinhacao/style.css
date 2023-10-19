@@ -39,6 +39,7 @@ main{
 #sec2{
     display: flex;
     flex-direction: column;
+    width: 290px;
     
 }
 #modo{
@@ -59,4 +60,8 @@ main{
 }
 #botao{
     border-radius: 20px;
+}
+#botoes{
+    display: flex;
+    justify-content: space-between;
 }
