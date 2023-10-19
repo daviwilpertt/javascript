@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        Jogo da Adivinhação - PvE
+        <h1>Jogo da Adivinhação - PvE</h1>
     </header>
     <section id="modo">
         <a class="modo" href="adivinha_pvp.html">MODO PVP</a>
@@ -23,12 +23,14 @@
         <section class="secs" id="sec1">
             <div>
             <h1>Regras do Jogo</h1>
+            <br> <br>
             <ul>
                 <li>Selecione a dificuldade e aperte o botão continuar,
-                o número de tentativas sera indicado abaixo do botão.</li>
-                <li>tenta acertar um número de 1 a 10, se as tentativas acabarem,
+                o número de tentativas sera indicado abaixo do botão.</li> <br>
+                <li>Tente acertar um número de 1 a 10, se as tentativas acabarem,
                 aparecera uma mensagem dizendo que o jogo foi encerrado, caso acerte
-                dentro dos limites de tentativas, o jogo será ganho.</li>
+                dentro dos limites de tentativas, o jogo será ganho.</li> <br>
+                <li>Para recomeçar o jogo, atualize a página.</li>
             </ul>
         </section>
 
@@ -48,10 +50,11 @@
                 digite um numero: <input type="number" id="numero_digitado" value="1"> <br>
                 <label id="tentativas_restantes">&nbsp;</label>
                 <hr>
-                <button class="botao" disabled onclick="resultado()" id="botao_res">toma</button> <br>
+                <button class="botao" disabled onclick="resultado()" id="botao_res">chutar</button> 
                 <b id="saida"></b>
-                
             </div>
+                
+                
         </section>
     </main>
     <script src="adivinha_pve.js"></script>

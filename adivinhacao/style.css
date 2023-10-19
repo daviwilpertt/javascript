@@ -12,19 +12,30 @@ header{
     height: 10%;
     background-color: black;
     color: white;
+    text-align: center;
+}
+h1{
+    font-size: 40px;
+    padding-top: 10px;
 }
 main{
-    height: 90%;
-    color: white;
+    height: 80%;
+    color: rgba(255, 255, 255, 0.562);
     background-color: rgb(43, 43, 43);
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     font-size: 20px;
+    font-family:Verdana, sans-serif ;
     
 }
 #sec1{
     width: 40%;
+}
+#sec2{
+    display: flex;
+    flex-direction: column;
+    
 }
 #modo{
     display: flex;
@@ -37,6 +48,7 @@ main{
     background-color: white;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 20px;
 }
 #numero_digitado{
     width: 30px;

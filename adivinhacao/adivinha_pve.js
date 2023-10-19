@@ -1,16 +1,16 @@
-let saida = document.getElementById("saida")
+let saida_resultado = document.getElementById("saida");
 let saida_dificuldade = document.getElementById("saida_dificuldade");
 let saida_tentativas = document.getElementById("tentativas_restantes");
 let facil = document.getElementById("facil");
 let media = document.getElementById("media");
 let dificil = document.getElementById("dificil");
 let mt_dificil = document.getElementById("mt_dificil");
-let numero_aleatorio = Math.random().toFixed(1) * 10
-let tentativas = Number(1)
-let max_tentativas = Number()
+let numero_aleatorio = Math.random().toFixed(1) * 10;
+let tentativas = Number(1);
+let max_tentativas = Number();
 let res = document.getElementById("botao_res");
 let dif = document.getElementById("botao_dif");
-// console.log(numero_aleatorio)
+console.log(numero_aleatorio)
 function dificuldade() {
     res.disabled = false
     dif.disabled = true
@@ -28,7 +28,7 @@ function dificuldade() {
         saida_dificuldade.innerHTML = max_tentativas
     }
     else if (mt_dificil.checked) {
-        max_tentativas = 2
+        max_tentativas = 2;
         saida_dificuldade.innerHTML = max_tentativas
     }
     
@@ -43,24 +43,26 @@ function resultado() {
         }
         else if (max_tentativas == 0) {
             saida_tentativas.innerHTML = "acabaram as tentativas"
-            
+            res.disabled = true
         }
         else {
         }
         if (entrada == numero_aleatorio) {
-            saida.innerHTML = `acertou em ${tentativas} tentativas`
+            saida_resultado.innerHTML = `acertou em ${tentativas} tentativas`
             saida_tentativas.innerHTML = "jogo encerrado"
+            res.disabled = true
+
         }
         else if (entrada > numero_aleatorio) {
-            saida.innerHTML = "chute alto"
+            saida_resultado.innerHTML = "chute alto"
             tentativas++
         }
         else if (entrada < numero_aleatorio) {
-            saida.innerHTML = "chute baixo"
+            saida_resultado.innerHTML = "chute baixo"
             tentativas++    
         }
     }
     else {
-        saida.innerHTML = "1 a 10"
+        saida_resultado.innerHTML = "1 a 10"
     }
 }
