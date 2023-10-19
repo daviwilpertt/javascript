@@ -18,32 +18,33 @@
         <a class="modo" href="adivinha_pvp.html">MODO PVP</a>
         <a class="modo" href="adivinha_pve.html">MODO PVE</a>
     </section>
-    
+
     <main>
         <section class="secs" id="sec1">
             <div>
-            <h1>Regras do Jogo</h1>
-            <br> <br>
-            <ul>
-                <li>Selecione a dificuldade e aperte o botão continuar,
-                o número de tentativas sera indicado abaixo do botão.</li> <br>
-                <li>Tente acertar um número de 1 a 10, se as tentativas acabarem,
-                aparecera uma mensagem dizendo que o jogo foi encerrado, caso acerte
-                dentro dos limites de tentativas, o jogo será ganho.</li> <br>
-                <li>Para recomeçar o jogo, aperte o botão resetar ou atualize a página.</li>
-            </ul>
+                <h1>Regras do Jogo</h1>
+                <br> <br>
+                <ul>
+                    <li>Selecione a dificuldade e aperte o botão continuar,
+                        o número de tentativas sera indicado abaixo do botão.</li> <br>
+                    <li>Tente acertar um número de 1 a 10, se as tentativas acabarem,
+                        aparecera uma mensagem dizendo que o jogo foi encerrado, caso acerte
+                        dentro dos limites de tentativas, o jogo será ganho.</li> <br>
+                    <li>Para recomeçar o jogo, aperte o botão resetar ou atualize a página.</li>
+                </ul>
         </section>
 
         <section class="secs" id="sec2">
             <div id="dificuldade">
-                selecione a dificuldade <hr>
+                selecione a dificuldade
+                <hr>
                 <input name="radio" type="radio" id="facil"> fácil <br>
                 <input checked name="radio" type="radio" id="media"> média <br>
                 <input name="radio" type="radio" id="dificil"> difícil <br>
                 <input name="radio" type="radio" id="mt_dificil"> muito difícil <br>
                 <hr>
                 <button class="botao" onclick="dificuldade()" id="botao_dif">continuar</button> <br> <br>
-                <p>número de tentativas:  <label id="saida_dificuldade">10</label></p>
+                <p>número de tentativas: <label id="saida_dificuldade">10</label></p>
                 <hr>
             </div>
             <div id="jogo">
@@ -53,14 +54,15 @@
             </div>
             <br>
             <div id="botoes">
-                <button class="botao" disabled onclick="resultado()" id="botao_res">chutar</button> 
+                <button class="botao" disabled onclick="resultado()" id="botao_res">chutar</button>
                 <button disabled onclick="reset()" id="botao_resetar">resetar</button>
             </div>
-                <b id="saida">&nbsp</b>
-                
-                
+            <b id="saida">&nbsp</b>
+
+
         </section>
     </main>
     <script src="adivinha_pve.js"></script>
 </body>
+
 </html>

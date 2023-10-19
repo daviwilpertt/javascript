@@ -17,7 +17,7 @@ function dificuldade() {
     dif.disabled = true
     if (facil.checked) {
         max_tentativas = 15;
-        saida_dificuldade.innerHTML = max_tentativas   
+        saida_dificuldade.innerHTML = max_tentativas
     }
     else if (media.checked) {
         max_tentativas = 10;
@@ -31,7 +31,7 @@ function dificuldade() {
         max_tentativas = 2;
         saida_dificuldade.innerHTML = max_tentativas
     }
-     
+
 }
 function resultado() {
     let entrada = document.getElementById("numero_digitado").value
@@ -44,6 +44,7 @@ function resultado() {
             saida_tentativas.innerHTML = "acabaram as tentativas"
             res.disabled = true
             resetar.disabled = false
+            saida_resultado.innerHTML = "&nbsp"
         }
         else {
         }
@@ -60,13 +61,14 @@ function resultado() {
         }
         else if (entrada < numero_aleatorio) {
             saida_resultado.innerHTML = "chute baixo"
-            tentativas++    
+            tentativas++
         }
     }
     else {
         saida_resultado.innerHTML = "1 a 10"
     }
 }
+
 function reset() {
     entrada = document.getElementById("numero_digitado")
     numero_aleatorio = Math.random().toFixed(1) * 10
