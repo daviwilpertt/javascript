@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhação PvP</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        Jogo da Adivinhação - PvP
+    </header>
+    <section id="modo">
+        <a class="modo" href="adivinha_pvp.html">MODO PVP</a>
+        <a class="modo" href="adivinha_pve.html">MODO PVE</a>
+    </section>
+    
+    <main>
+        <section id="sec1">
+            <div>
+            <h1>Regras do Jogo</h1>
+            <ol>
+                <li>tenta acertar um número de 1 a 10</li>
+                
+            </ol>
+        </section>
+
+        <section id="sec2">
+            
+            <div id="jogo">
+                digite um numero de 1 a 10: <input type="number" id="numero_digitado" value="1"> <br>
+                <label id="tentativas_restantes">&nbsp;</label>
+                <hr>
+                <button onclick="resultado()">toma</button> <br>
+                <b id="saida"></b>
+                
+            </div>
+        </section>
+    </main>
+    <script src="adivinha_pvp.js"></script>
+</body>
+
+</html>
