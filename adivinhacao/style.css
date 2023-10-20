@@ -67,7 +67,7 @@ main {
     margin: 20px;
 }
 
-#numero_digitado {
+.numeros {
     width: 30px;
 }
 
