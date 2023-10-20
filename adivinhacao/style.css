@@ -73,15 +73,20 @@ section > h1{
 .numeros {
     width: 30px;
 }
-
 .botao{
-justify-content: center;
-align-items: center;
-text-align: center;
-    
+    width: 80px;
+    height: 30px;
+    border-radius: 10px;
 }
 
 #botoes {
     display: flex;
     justify-content: space-between;
 }
+#botaoa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
+    

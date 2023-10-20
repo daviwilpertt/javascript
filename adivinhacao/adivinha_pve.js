@@ -56,11 +56,11 @@ function resultado() {
 
         }
         else if (entrada > numero_aleatorio) {
-            saida_resultado.innerHTML = "chute alto"
+            saida_resultado.innerHTML = "número é menor"
             tentativas++
         }
         else if (entrada < numero_aleatorio) {
-            saida_resultado.innerHTML = "chute baixo"
+            saida_resultado.innerHTML = "número é maior"
             tentativas++
         }
     }
