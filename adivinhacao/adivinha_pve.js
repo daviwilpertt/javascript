@@ -11,7 +11,7 @@ let max_tentativas = Number();
 let resetar = document.getElementById("botao_resetar")
 let res = document.getElementById("botao_res");
 let dif = document.getElementById("botao_dif");
-// console.log(numero_aleatorio)
+//console.log(numero_aleatorio)
 function dificuldade() {
     res.disabled = false
     dif.disabled = true
@@ -41,7 +41,7 @@ function resultado() {
             saida_tentativas.innerHTML = "tentativas restantes: " + max_tentativas
         }
         else if (max_tentativas == 0) {
-            saida_tentativas.innerHTML = "acabaram as tentativas"
+            saida_tentativas.innerHTML = `acabaram as tentativas <br> o número era ${numero_aleatorio}` 
             res.disabled = true
             resetar.disabled = false
             saida_resultado.innerHTML = "&nbsp"

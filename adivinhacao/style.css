@@ -41,6 +41,9 @@ main {
 
 }
 
+section > h1{
+    text-align: center;
+}
 #sec1 {
     width: 40%;
 }
@@ -52,7 +55,7 @@ main {
 
 }
 
-#modo {
+#sec_modo {
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -61,7 +64,7 @@ main {
 }
 
 .modo {
-    background-color: white;
+    background-color: rgb(116, 116, 116);
     padding: 10px;
     border-radius: 10px;
     margin: 20px;
@@ -71,8 +74,11 @@ main {
     width: 30px;
 }
 
-#botao {
-    border-radius: 20px;
+.botao{
+justify-content: center;
+align-items: center;
+text-align: center;
+    
 }
 
 #botoes {

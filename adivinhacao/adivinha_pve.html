@@ -14,16 +14,15 @@
     <header>
         <h1>Jogo da Adivinhação - PvE</h1>
     </header>
-    <section id="modo">
+    <section id="sec_modo">
         <a class="modo" href="adivinha_pvp.html">MODO PVP</a>
         <a class="modo" href="adivinha_pve.html">MODO PVE</a>
     </section>
 
     <main>
         <section class="secs" id="sec1">
+            <h1>Regras do Jogo</h1> <br> <br>
             <div>
-                <h1>Regras do Jogo</h1>
-                <br> <br>
                 <ul>
                     <li>Selecione a dificuldade e aperte o botão continuar,
                         o número de tentativas sera indicado abaixo do botão.</li> <br>
@@ -35,6 +34,7 @@
         </section>
 
         <section class="secs" id="sec2">
+            <h1>Jogo</h1> <br> <br>
             <div id="dificuldade">
                 selecione a dificuldade
                 <hr>
@@ -43,15 +43,15 @@
                 <input name="radio" type="radio" id="dificil"> difícil <br>
                 <input name="radio" type="radio" id="mt_dificil"> muito difícil <br>
                 <hr>
-                <button class="botao" onclick="dificuldade()" id="botao_dif">continuar</button> <br> <br>
+                <button onclick="dificuldade()" class="botao id="botao_dif">continuar</button> <br> <br>
                 <p>número de tentativas: <label id="saida_dificuldade">10</label></p>
                 <hr>
             </div>
             <div id="jogo">
                 digite um numero: <input type="number" class="numeros" id="numero_digitado" value="1"> <br>
-                <label id="tentativas_restantes">&nbsp;</label>
-                <hr>
             </div>
+            <label id="tentativas_restantes">&nbsp;</label> 
+            <hr>
             <br>
             <div id="botoes">
                 <button class="botao" disabled onclick="resultado()" id="botao_res">chutar</button>
