@@ -7,7 +7,7 @@ function contar1() {
         contador_cres++
         saida1.innerHTML += `${contador_cres} <br>`
     }
-    
+
 }
 
 function contar2() {
