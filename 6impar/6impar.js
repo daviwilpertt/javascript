@@ -7,7 +7,6 @@ function res() {
         for (let i = 0; i < 6; i++) {
             saida.innerHTML += total + "<br>"
             total += 2
-
         }
     }
     else if (numero % 2 == 1) {
