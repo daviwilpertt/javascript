@@ -1,0 +1,17 @@
+tipos de dados arduino
+boolean: true ou false
+char: um caractere
+byte: um byte, ou sequência de 8 bits
+int: número inteiro de 16 bits com sinal (-32786 a 21767) memória
+unsigned int: número inteiro de 16 bits sem sinal (0 a 65535)
+long: número inteiro de 16 bits com sinal (-214783648 a 214783647)
+unsigned long: número inteiro de 16 bits sem sinal (0 a 4294967295)
+float: número real com uma casa decimal
+double: número real com duas casas decimais
+string: sequência de caracteres
+
+funções básicas 
+I/O (entrada e saída):
+	pinMode(pino, modo)
+	digitalWrite(pino, valor)
+	
