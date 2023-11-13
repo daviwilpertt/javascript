@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viajando</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Viajando</h1>
+        <button id="button-entrar" onclick="entrar()">ENTRAR</button>
+    </header>
+<main>
+
+    <section id="lateral">
+        
+        <span id="perfil_lateral">
+            <img onclick="meu_perfil()" id="foto_perfil" src="./image/img.jpg" alt="ima_perfil">
+            <p>nome</p>
+            
+        </span>
+        <span id="categorias">
+            <p>
+                <button onclick="add_viagem()" class="botoes">add viagem</button>
+            </p>
+            <p>
+                <button onclick="minhas_viagens()" class="botoes">minhas viagens</button>
+                
+            </p>
+        </span>
+    </section>
+    <section id="feed">
+        
+    </section>
+</main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

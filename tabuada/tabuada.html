@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabuada</title>
+    <style>
+        section { 
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+        #botoes{
+            display: flex;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>TABUADA DO JUCA</h1>
+
+        <p>
+            digite um número <br> 
+            <input type="number" id="numero">
+        </p>
+        <p id="botoes">
+            <button id="btn_res" onclick="res()">calcular</button>
+            <button id="btn_limpar" disabled onclick="limpar()">limpar</button>
+        </p>
+        <b id="saida"></b>
+
+    </section>
+    <script src="tabuada.js"></script>
+</body>
+
+</html>
