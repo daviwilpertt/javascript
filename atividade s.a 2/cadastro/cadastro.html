@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadastro</title>
+    <link rel="stylesheet" href="style_cadastro.css">
+</head>
+
+<body>
+    <header>
+         <button id="btn_voltar" onclick="voltar()">voltar</button>
+        </header>
+    <main>
+        <section id="full-box">
+            <form id="registro">
+
+                <h1>cadastro</h1>
+                <p id="nome">
+                    <input class="inputs" type="text" id="name" placeholder="Nome">
+                    <input class="inputs" type="text" id="sobrenome" placeholder="Sobrenome">
+                </p> 
+                <p id="email_senha">
+                    <input class="inputs" type="email" id="email" placeholder="exemple@example.com">
+                    <input class="inputs" type="password" id="senha" placeholder="Crie uma senha"> 
+                    <input class="inputs" type="password" id="confSenha" placeholder="Repetir senha">
+                    <button onclick="cadastrar()" >cadastrar</button>
+                </p>
+            </form>
+        </section>
+    </main>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>
