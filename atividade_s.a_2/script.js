@@ -4,3 +4,4 @@ function entrar() {
 function add_viagem() {
     window.location.href = "./add_viagem/viagem.html"
 }
+

@@ -1,5 +1,5 @@
 function voltar() {
-    window.location.href = "atividade_s.a_2/index.html"
+    window.location.href = "/atividade_s.a_2/index.html"
 }
 function cadastrar() {
     let nome = document.getElementById("nome").value;
