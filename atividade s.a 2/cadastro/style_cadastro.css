@@ -27,7 +27,7 @@ main{
     background-color: rgb(176, 176, 176);
     border-radius: 10px  ;
     padding: 15px;
-    margin-top: 10%;
+    margin-top: 5%;
 }
 h1{
     text-align: center  ;
@@ -55,7 +55,13 @@ font-size: large;
     padding: 5px;
     border-radius: 10px;
     font-size: 15px;
-    background-color: rgb(1, 1, 134);
-    color: white;
+    background-color: rgb(209, 182, 146);
 }
 
+.botoes {
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(209, 182, 146);
+}
