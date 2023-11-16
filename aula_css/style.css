@@ -1,0 +1,10 @@
+body{
+    background-color: blueviolet;
+}
+#titulo{
+    border: 200px solid transparent;
+    border-radius: 300px;
+    text-align: center;
+    background-color: aqua;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
