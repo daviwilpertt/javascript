@@ -9,3 +9,8 @@ array.push(0) //adicionar um dado dentro do array
 arrays.forEach(function(array){ // item da matriz
     console.log(array) // pega os dados do array e imprime no console
 }) 
+
+
+
+
+
