@@ -25,11 +25,11 @@ function pesquisar() {
         if (pet_pesquisado == pets_cadastrados[i]) {
             saida_pesquisa.innerHTML = `ta aqui:  ${pet_pesquisado}, está na ${i + 1} posição`
             posicao = i
+            input_pesquisa.value = ""
+            input_pesquisa.focus();
         }
         if (posicao == -1) {
             saida_pesquisa.innerHTML = "não achei nenhum pet com esse"
         }
-        input_pesquisa.value = ""
-        input_pesquisa.focus();
     }
 }
