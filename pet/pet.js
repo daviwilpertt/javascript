@@ -18,13 +18,15 @@ function cadastrar() {
 
 
 function pesquisar() {
+    let posicao = -1;
     let input_pesquisa = document.getElementById("procurar");
     let pet_pesquisado = input_pesquisa.value;
     for (let i = 0; i < pets_cadastrados.length; i++) {
         if (pet_pesquisado == pets_cadastrados[i]) {
-            saida_pesquisa.innerHTML = `ta aqui:  ${pet_pesquisado}, está na ${i+1} posição`
+            saida_pesquisa.innerHTML = `ta aqui:  ${pet_pesquisado}, está na ${i + 1} posição`
+            posicao = i
         }
-        if (pet_pesquisado = !pets_cadastrados[i]) {
+        if (posicao == -1) {
             saida_pesquisa.innerHTML = "não achei nenhum pet com esse"
         }
         input_pesquisa.value = ""
