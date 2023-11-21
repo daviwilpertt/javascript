@@ -1,9 +1,9 @@
 
-let usuarios = []
 function voltar() {
     window.location.href = "/sa/index.html"
 }
 function cadastrar() {
+    let usuarios = []
     let nomeLido = document.getElementById("nome").value;
     let sobrenomeLido = document.getElementById("sobrenome").value;
     let emailLido = document.getElementById("email").value;
@@ -14,7 +14,7 @@ function cadastrar() {
         email: emailLido,
         senha: senhaLida
     }
+    
     usuarios.push(usuario);
-
-    console.log(usuarios)
 }
+alert(usuarios)
