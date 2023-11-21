@@ -12,12 +12,20 @@ main{
 #login{
     background-color: antiquewhite;
     width: 50%;
-    padding-top:20% ;
+    padding-top:15% ;
 }
 #cadastro{
     background-color: rgb(221, 32, 32);
     width: 50%;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 
+}
+h1{
+    font-style: bold;
 }
 
 .logos{
@@ -27,4 +35,10 @@ main{
 
 #emails{
     margin: 15px;
+}
+.botoes{
+    width: 130px;
+    padding: 10px;
+    border-radius: 10px;
+    
 }
