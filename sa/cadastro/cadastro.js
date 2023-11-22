@@ -8,10 +8,10 @@ function voltar() {
 let usuarios = [];
 
 function cadastrar() {
-    let nome_digitado = document.getElementById("nome");
-    let sobrenome_digitado = document.getElementById("sobrenome");
-    let email_digitado = document.getElementById("email");
-    let senha_digitada = document.getElementById("senha");
+    let nome_digitado = document.getElementById("input_nome");
+    let sobrenome_digitado = document.getElementById("input_sobrenome");
+    let email_digitado = document.getElementById("input_email");
+    let senha_digitada = document.getElementById("input_senha");
 
     let nomeLido = nome_digitado.value;
     let sobrenomeLido = sobrenome_digitado.value;
