@@ -18,16 +18,18 @@ function cadastrar() {
     let emailLido = email_digitado.value;
     let senhaLida = senha_digitada.value;
 
-    let usuario = [
-        nomeLido,
-        sobrenomeLido,
-        emailLido,
-        senhaLida
-    ]
-    console.log(usuario)
+    let usuario = {
+        nome: nomeLido,
+        sobrenome: sobrenomeLido,
+        email: emailLido,
+        senha: senhaLida
+    }
     
     usuarios.push(usuario);
-    alert(usuarios)
+    console.log(usuarios)
     
     
 }
+
+
+

@@ -27,6 +27,7 @@ function pesquisar() {
             posicao = i
             input_pesquisa.value = ""
             input_pesquisa.focus();
+            alert(pet_pesquisado)
         }
         if (posicao == -1) {
             saida_pesquisa.innerHTML = "não achei nenhum pet com esse"

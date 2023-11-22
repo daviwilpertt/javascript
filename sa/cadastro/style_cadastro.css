@@ -34,7 +34,7 @@ h1{
     margin-bottom: 25px;
     font-size: 1.6rem;
 }
-#nome{
+#p_nome{
     display: flex;
     justify-content: space-evenly;
 }
