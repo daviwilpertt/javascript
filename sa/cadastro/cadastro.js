@@ -18,30 +18,30 @@ function cadastrar() {
     
     
     
-    
     let nomeLido = nome_digitado.value;
     let sobrenomeLido = sobrenome_digitado.value;
     let emailLido = email_digitado.value;
     let senhaLida = senha_digitada.value;
     
-    
-    
-    
-    let usuario = [
-        nomeLido,
-        sobrenomeLido,
-        emailLido,
-        senhaLida
-    ]
-    
-    usuarios.push(usuario);
-    localStorage.setItem('usuarios', JSON.stringify(usuarios))
+    let usuario = {
+        nome: nomeLido,
+        sobrenome: sobrenomeLido,
+        email: emailLido,
+        senha: senhaLida
+        }
+        
+        for (let i = 0; i < usuarios.length; i++){
+            usuarios.push(usuario);
+            localStorage.setItem('usuarios', JSON.stringify(usuarios))
+        
+        }
         
         
-        
-        // window.location = "/sa/cadastro/pagina_login.html";
-    }
-    console.log(usuarios)
+        console.log(usuarios)
+    
+
+    window.location = "/sa/cadastro/pagina_login.html";
+}
 
 
 
