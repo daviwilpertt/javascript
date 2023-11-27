@@ -11,6 +11,7 @@ body {
 }
 
 header {
+    display: flex;
     height: 10%;
     font-size: 20px;
     align-items: center;
@@ -87,7 +88,7 @@ main{
     background-color: rgb(56, 56, 56);
     color: white;
 }
-#feed{
+#mural{
     background-color:rgb(59, 59, 59);
     width: 80%;
 }

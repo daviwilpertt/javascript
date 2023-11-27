@@ -30,11 +30,11 @@ function cadastrar() {
         senha: senhaLida
         }
         
-        for (let i = 0; i < usuarios.length; i++){
+        
             usuarios.push(usuario);
             localStorage.setItem('usuarios', JSON.stringify(usuarios))
         
-        }
+        
         
         
         console.log(usuarios)
