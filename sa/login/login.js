@@ -7,10 +7,12 @@ function login() {
     let email = document.querySelector("#email");
     let senha = document.querySelector("#senha");
 
+    let posicao = usuarios.indexOf()
+
     for (let i = 0; i < usuarios.length; i++) {
 
         if (email.value == usuarios[i].email && senha.value == usuarios[i].senha) {
-
+            
             window.location = "/sa/index.html";
         }
         else if (email.value != usuarios[i].email || senha.value != usuarios[i].senha) {
