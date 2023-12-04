@@ -1,13 +1,19 @@
 
 let usuarios = JSON.parse(localStorage.getItem("usuarios"))
 console.log(usuarios)
+
+let inp_nome = document.querySelector("#inp_nome");
+let inp_sobrenome = document.querySelector("#inp_sobrenome");
+let inp_email = document.querySelector("#inp_email");
+let inp_senha = document.querySelector("#inp_senha");
+
+inp_nome.value = usuarios[0].nome;
+inp_sobrenome.value = usuarios[0].sobrenome;
+inp_email.value = usuarios[0].email;
+inp_senha.value = usuarios[0].senha;
 function editar_perfil(){
     
     
-    let inp_nome = document.querySelector("#inp_nome");
-    let inp_sobrenome = document.querySelector("#inp_sobrenome");
-    let inp_email = document.querySelector("#inp_email");
-    let inp_senha = document.querySelector("#inp_senha");
     if(inp_nome.value != 0){
         usuarios[0].nome = inp_nome.value
     }

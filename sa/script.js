@@ -2,7 +2,17 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios"))
 console.log(usuarios)
 
 function add_viagem() {
-    window.location.href = "./add_viagem/viagem.html"
+    // window.location.href = "./add_viagem/viagem.html"
+    let div = document.querySelector("#foto");
+    let image = new Image();
+
+    image.onload = function () {
+        div.innerHTML += `<img src ="${image.src}" />`
+    };
+    image.src = "./fotos/bicicleta.png"
+    
+
+
 }
 
 for (let i = 0; i < usuarios.length; i++){

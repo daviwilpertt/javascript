@@ -2,7 +2,7 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 let botao_cadastro = document.querySelector("botao_cadastro");
 
 function voltar() {
-    window.location.href = "./login/pagina_login.html";
+    window.location.href = "../login/pagina_login.html";
 }
 
 
