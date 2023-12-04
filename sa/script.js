@@ -2,7 +2,7 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios"))
 console.log(usuarios)
 
 function add_viagem() {
-    window.location.href = "/sa/add_viagem/viagem.html"
+    window.location.href = "./add_viagem/viagem.html"
 }
 
 for (let i = 0; i < usuarios.length; i++){
@@ -11,7 +11,7 @@ for (let i = 0; i < usuarios.length; i++){
 }
 
 function sair() {
-    window.location.href = "/login/pagina_login.html"
+    window.location.href = "./login/pagina_login.html"
 }
 
 function meu_perfil() {
