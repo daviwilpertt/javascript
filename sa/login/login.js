@@ -13,7 +13,7 @@ function login() {
 
         if (email.value == usuarios[i].email && senha.value == usuarios[i].senha) {
             
-            window.location = "/sa/index.html";
+            window.location.href = "../index.html";
         }
         else if (email.value != usuarios[i].email || senha.value != usuarios[i].senha) {
             saida_erro.innerHTML = "Email ou senha incorretos"

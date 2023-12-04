@@ -1,13 +1,12 @@
 
 body{
     height: 100%;
-    background-image: url(image/cadastro_bg.jpg);
+    background-image: url(../image/cadastro_bg.jpg);
     background-size: cover;
    
 }
 header{
-    height: 10%;
-    
+    height: 10%; 
 }
 main{
     height: 90%;
@@ -15,9 +14,7 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 30px;
-    
-    
+    font-size: 30px; 
 }
 #full-box{  
     display: flex;

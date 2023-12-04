@@ -2,7 +2,7 @@ let usuarios = JSON.parse(localStorage.getItem("usuarios")) || [];
 let botao_cadastro = document.querySelector("botao_cadastro");
 
 function voltar() {
-    window.location.href = "/sa/login/pagina_login.html"
+    window.location.href = "./login/pagina_login.html";
 }
 
 
@@ -30,11 +30,8 @@ function cadastrar() {
     
     vetor_usuarios.push(usuario);
 
-
-    
-    
     console.log(vetor_usuarios)
-    // window.location = "/sa/login/pagina_login.html";
+    window.location = "../login/pagina_login.html";
     localStorage.setItem("usuarios", JSON.stringify(vetor_usuarios))
 
     JSON.parse(localStorage.getItem("usuarios"))
