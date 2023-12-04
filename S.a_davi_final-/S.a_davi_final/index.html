@@ -12,15 +12,13 @@
 <body>
     <header>
         <h1>Viajando</h1>
-        <button id="button-entrar" onclick="entrar()">ENTRAR</button
+        <button id="btn_sair" onclick="sair()">sair</button>
     </header>
 <main>
-
     <section id="lateral">
-        
         <span id="perfil_lateral">
             <img onclick="meu_perfil()" id="foto_perfil" src="./image/img.jpg" alt="ima_perfil">
-            <p>nome</p>
+            <p id="saida_nome">nome</p>
             
         </span>
         <span id="categorias">
@@ -28,12 +26,12 @@
                 <button onclick="add_viagem()" class="botoes">add viagem</button>
             </p>
             <p>
-                <button onclick="minhas_viagens()" class="botoes">minhas viagens</button>
-                
+                <button onclick="meu_perfil()" class="botoes">meu perfil</button>
+                <a href="./meu_perfil/perfil.html"></a>
             </p>
         </span>
     </section>
-    <section id="feed">
+    <section id="mural">
         
     </section>
 </main>

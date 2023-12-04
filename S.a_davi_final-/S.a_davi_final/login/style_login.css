@@ -1,0 +1,68 @@
+body {
+    height: 100%;
+    background-image: url(image/cadastro_bg.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 10%;
+
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+
+}
+
+#full_box {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(176, 176, 176);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10%;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+}
+
+#p_inpt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputs {
+    padding: 10px;
+    border-radius: 10px;
+    border-color: rgb(0, 33, 61);
+    margin-bottom: 10px;
+    font-size: large;
+    width: 50%;
+
+}
+
+.botoes {
+    font-size: 20px;
+    padding: 5px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: rgb(209, 182, 146);
+}
+
+
+#ancora_cadastro{
+    font-size: 20px;
+}
