@@ -31,7 +31,7 @@ function cadastrar() {
     vetor_usuarios.push(usuario);
 
     console.log(vetor_usuarios)
-    window.location = "./login/pagina_login.html";
+    window.location = "../login/pagina_login.html";
     localStorage.setItem("usuarios", JSON.stringify(vetor_usuarios))
 
     JSON.parse(localStorage.getItem("usuarios"))

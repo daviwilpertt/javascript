@@ -5,52 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style_perfil.css">
 </head>
 
 <body>
     <header>
-        <button onclick="sair()">fdfdfdfdf</button>
+        <button id="btn_voltar" onclick="sair()">voltar</button>
     </header>
-    <div id="container">
-        <div id="titulo">
-            <a href="../index.html"></a>
-            
-            <h1>meu perfil</h1>
-
-        </div>
-        <div id="box-centro">
-            <div id="editorperfil">
-                <h3>editar perfil</h3>
-            </div>
-            <div id="botoes">
-                <div id="editEmail">
-
-                    <label class="labeledit" >editar email</label>
-                    <input class="inptEdit" type="email"id="inptEmail">
-                </div>
-                <div id="editSenha">
-                    <label class="labeledit" >editar senha</label>
-                    <input class="inptEdit"  type="password">
-
-                </div>
-                <div id="editNome">
-                    <label class="labeledit" >editar nome</label>
-                    <input class="inptEdit"  type="text">
-
-                </div>
-                <div id="btn-edit">
-                    <button id="btn-edit"  onclick="EditPerfil()">editar</button>
-                </div> 
-            </div>
+    <main>
+        <section id="full-box">
+            <h1>editar perfil</h1>
+            <p id="p_nome">
+                <input class="inputs" id="inp_nome" type="text" placeholder="Novo nome">
+                <input class="inputs" id="inp_sobrenome" type="text" placeholder="Novo sobrenome">
+            </p>
+            <p id="email_senha">
+                <input class="inputs" id="inp_email" type="email" placeholder="Novo email"> 
+                <input class="inputs" id="inp_senha" type="text" placeholder="Nova senha">
+               <button class="botoes" onclick="editar_perfil()">salvar</button>
+            </p>
 
 
-        </div>
 
 
-    </div>
-    <script src="perfil.js"></script>
-    
+
+        </section>
+    </main>
+           
+
+
+
+    <script src="perfil.js"></script>    
 </body>
 
 </html>
