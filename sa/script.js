@@ -7,12 +7,9 @@ function add_viagem() {
     let image = new Image();
 
     image.onload = function () {
-        div.innerHTML += `<img src ="${image.src}" />`
+        div.innerHTML += `<img id="foto1" src ="${image.src}" />`
     };
     image.src = "./fotos/bicicleta.png"
-    
-
-
 }
 
 for (let i = 0; i < usuarios.length; i++){
