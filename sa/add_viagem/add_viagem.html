@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>add</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="#" alt="Imagem logo">
+        </div>
+        <div class="titulo">
+            <h2>Escolha sua Viagem</h2>
+        </div>
+        <div class="titulo">
+            <!--apenas isso-->
+        </div>
+    </header>
+    <main class="container">
+        <section id="lateral">
+            <p>
+                Localização <br>                 
+                <input type="text" id="localizacao"> 
+            </p>
+                <p>
+                    Data <br>
+                    <input type="text" id="data">
+                </p>
+                <p>
+                    Descrição <br>
+                    <input type="text" id="descricao">
+                </p>
+                <button onclick="postar()">enviar</button>
+        </section>
+        <section class="container_content">
+            <div class="escolha_imagem">
+                <div class="selecao">
+                    <select id="select_image" onchange="Selecionado_imagem()">
+                        <option value="" selected disabled>Escolha seu meio de transporte</option>
+                        <option value="1">Trilha</option>
+                        <option value="2">Bicicleta</option>
+                        <option value="3">Motocicleta</option>
+                        <option value="4">Carro</option>
+                        <option value="5">Barco</option>
+                    </select>
+                </div>
+                <div class="content_image">
+                    <div class="imagem" id="imagem_usuario">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button onclick="Selecionado_imagem()">Escolher transporte</button>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <script src="viagem.js"></script>
+</body>
+</html>
