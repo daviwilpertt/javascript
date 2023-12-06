@@ -20,7 +20,7 @@ function Selecionado_imagem() {
         img.src = "../imagens/barco.png"
     }
     
-      caminho_foto = img.src
+    caminho_foto = "./" + img.src.slice(25)
     
 }
 
@@ -36,8 +36,8 @@ function postar() {
         descricao: inp_descricao.value
     }
     console.log(obj)
+    localStorage.setItem("fotos", JSON.stringify(obj))
     window.location.href = "../index.html"
-    JSON.parse(localStorage.setItem("fotos", JSON.stringify(obj)))
 
     
 }

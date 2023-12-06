@@ -1,14 +1,9 @@
 let usuarios = JSON.parse(localStorage.getItem("usuarios"))
 console.log(usuarios)
 
-let foto = localStorage.getItem("fotos")
 
-if (foto) {
-    let nova = document.createElement("div");
-    nova.innerHTML = foto.caminho
-    document.body.appendChild(nova)
-}
-
+let foto = JSON.parse(localStorage.getItem("fotos"))
+console.log(foto)
 function add_viagem() {
     window.location.href = "./add_viagem/add_viagem.html"
    
@@ -19,8 +14,9 @@ for (let i = 0; i < usuarios.length; i++){
     nome.innerHTML = usuarios[i].nome
 }
 
-let saida_foto = document.querySelector("#foto")
+let saida_foto = document.querySelector("#div_foto")
 
+saida_foto.innerHTML = `<img src="${foto.image}">`
 
 function sair() {
     window.location.href = "./login/pagina_login.html"
