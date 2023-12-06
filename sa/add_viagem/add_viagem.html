@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>add</title>
+    <link rel="stylesheet" href="style_viagem.css">
+    <title>Adicionar Viagens</title>
 </head>
 <body>
     <header>
@@ -16,7 +16,7 @@
             <h2>Escolha sua Viagem</h2>
         </div>
         <div class="titulo">
-            <!--apenas isso-->
+            <button id="btn_sair" onclick="sair()">sair</button>
         </div>
     </header>
     <main class="container">
@@ -29,17 +29,14 @@
                     Data <br>
                     <input type="text" id="data">
                 </p>
-                <p>
-                    Descrição <br>
-                    <input type="text" id="descricao">
-                </p>
+                
                 <button onclick="postar()">enviar</button>
         </section>
         <section class="container_content">
             <div class="escolha_imagem">
                 <div class="selecao">
                     <select id="select_image" onchange="Selecionado_imagem()">
-                        <option value="" selected disabled>Escolha seu meio de transporte</option>
+                        <option value="" selected disabled >Escolha seu meio de transporte</option>
                         <option value="1">Trilha</option>
                         <option value="2">Bicicleta</option>
                         <option value="3">Motocicleta</option>

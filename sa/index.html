@@ -11,32 +11,81 @@
 
 <body>
     <header>
+        <p></p>
         <h1>Viajando</h1>
         <button id="btn_sair" onclick="sair()">sair</button>
     </header>
-<main>
-    <section id="lateral">
-        <span id="perfil_lateral">
-            <img onclick="meu_perfil()" id="foto_perfil" src="./image/img.jpg" alt="ima_perfil">
-            <p id="saida_nome">nome</p>
-            
-        </span>
-        <span id="categorias">
-            <p>
-                <button onclick="add_viagem()" class="botoes">add viagem</button>
-            </p>
-            <p>
-                <button onclick="meu_perfil()" class="botoes">editar perfil</button>
-            </p>
-        </span>
-    </section>
-    <section id="mural">
-        <div id="div_foto">
-            
-        </div>
-    </section>
-</main>
-<img src="" alt="">
+    <main>
+        <section id="lateral">
+            <span id="perfil_lateral">
+                <img onclick="meu_perfil()" id="foto_perfil" src="./image/img.jpg" alt="ima_perfil">
+                <p id="saida_nome">nome</p>
+
+            </span>
+            <span id="categorias">
+                <p>
+                    <button onclick="add_viagem()" class="botoes">add viagem</button>
+                </p>
+                <p>
+                    <button onclick="meu_perfil()" class="botoes">editar perfil</button>
+                </p>
+            </span>
+        </section>
+        <section id="mural">
+            <span id="mural_cima">
+                <div class="conteudo_post">
+                    <div class="parte_image">
+                        <img src="imagens/maceio.png" alt="teste_post_imagem">
+                        <b>Maceió - Alagoas</b>
+                        <b>18/07/2019</b>
+                    </div>
+                </div>
+                <div class="conteudo_post">
+                    <div class="parte_image">
+                        <img src="imagens/penha.png" alt="teste_post_imagem">
+                        <b>Penha de Paulo Lopes</b>
+                        <b>01/03/2021</b>
+                    </div>
+                </div>
+                <div class="conteudo_post">
+                    <div class="parte_image">
+                        <img src="imagens/mocamba.png" alt="teste_post_imagem">
+                        <b>Moçambique</b>
+                        <b>24/03/2022</b>
+                    </div>
+                </div>
+            </span>
+            <span id="mural_baixo">
+                <div class="conteudo_post">
+                    <div class="parte_image">
+                        <img src="imagens/costa.png" alt="teste_post_imagem">
+                        <b>Costa da Lagoa</b>
+                        <b>12/08/2023</b>
+                    </div>
+                </div>
+                <div class="conteudo_post">
+                    <div class="parte_image">
+                        <img src="imagens/joaquina.png" alt="teste_post_imagem">
+                        <b>Trilha da Joaquina</b>
+                        <b>27/08/2023</b>
+                    </div>
+                </div>
+
+
+                <div class="conteudo_post">
+                    <div class="parte_image">
+                        <div id="div_foto">
+                        </div>
+                        <p>
+                            <b id="saida_local"></b>
+                            <b id="saida_data"></b>
+                        </p>
+                    </div>
+                </div>
+            </span>
+
+        </section>
+    </main>
     <script src="script.js"></script>
 </body>
 

@@ -1,15 +1,19 @@
 let caminho_foto;
 
+function sair() {
+    window.location.href = "../index.html"
+}
+
 function Selecionado_imagem() {
     let image_divs = document.getElementById("imagem_usuario")
     let select_image = document.getElementById("select_image")
     let img = new Image()
      img.onload = function(){
          image_divs.innerHTML = `<img id="foto" src = ${img.src}> `
-     }
+        }
 
     if(select_image.value == 1){
-          img.src = "../imagens/trilha.png"
+        img.src = "../imagens/trilha.png"
     }else if(select_image.value == 2 ){
         img.src = "../imagens/bicicleta.png"
     }else if(select_image.value == 3  ){
@@ -32,13 +36,12 @@ function postar() {
     let obj = {
         data: inp_data.value,
         local: inp_local.value,
-        image: caminho_foto,
-        descricao: inp_descricao.value
+        image: caminho_foto
     }
     console.log(obj)
-    localStorage.setItem("fotos", JSON.stringify(obj))
     window.location.href = "../index.html"
-
+    localStorage.setItem("fotos", JSON.stringify(obj))
+    
     
 }
 
